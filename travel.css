@@ -1,0 +1,266 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#navbar
+{
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    align-items: center;
+    position: relative;
+    top: 0;
+    position: fixed;
+    width:100%;
+
+}
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    top: 0;
+    left: 0px;
+}
+
+.logo
+{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.logo h3
+{
+    padding-left: 50px;
+     
+}
+#navbar ul
+{
+    display: flex;
+    gap: 30px;
+   
+}
+#navbar ul li
+{
+    list-style: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    
+}
+#navbar ul li:hover
+{
+    background-color: black;
+    
+}
+#navbar ul li a
+{
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+}
+#navbar ul li a:hover
+{
+    color: white;
+    font-weight: bold;
+}
+/* home section */
+#home
+{
+  
+    display: flex;
+    margin: 135px 0;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 180px;
+    
+    
+}
+#home::before
+{
+    content: "";
+    background: url(images/travel-bg.jpg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 920px;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+    left: 0px;
+    top: 0;
+     
+}
+
+#form-list
+{
+    display: flex;
+    background-color: white;
+    padding: 40px;
+    margin: 40px 0;
+    gap: 25px;
+    width: 1200px;
+    
+}
+#form-list input
+{
+    height: 55px;
+    width: 210px;
+    padding: 0 7px;
+    background-color: rgb(216, 215, 215);
+    border: none;
+}
+
+input::placeholder
+{
+    color: rgb(100, 98, 98);
+    font-size: 16px;
+    font-weight: bold;
+}
+.input-pattern{
+    width: 95%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0,0.6);
+    margin-top: 60px;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+
+.input-pattern h5
+{
+    color: white;
+    font-size: 50px;   
+}
+/* service section */
+#services
+{
+    /* border: 1px solid red; */
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+}
+
+.service-one
+{
+    /* border: 1px solid green; */
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+.service-one img
+{
+    height:75px;
+}
+.service-type h5
+{
+    font-size: 25px;
+}
+#destination
+{
+     
+    height:250px;
+}
+.des-head
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+.des-head h1
+{
+    font-size: 40px;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.des-head p
+{
+    color: grey;
+}
+#places
+{
+   /* border: 1px solid black; */
+   height: 600px;
+   display: grid;
+   grid-template-columns: 450px 450px 450px;
+   gap: 20px;
+   justify-content: center;
+}
+
+.place-one
+{
+    /* border: 1px solid green; */
+    height: 450px;
+    width: 450px;
+    position: relative;
+    z-index: -1;
+    
+}
+.place-one img
+{
+    height: 300px;
+    width: 450px;
+}
+.place-one h5
+{
+    
+    font-size: 40px;
+    padding-top: 15px;
+}
+.place-one p
+{
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+}
+.place-one h3
+{
+    padding-top: 35px;
+    font-size: 20px;
+}
+.place-one button
+{
+    position:absolute;
+    top: 0;
+    height: 45px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    margin: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+/* utility classes */
+.h-third
+{
+    padding-right: 30px;
+    color: white;
+}
+.h-primary
+{
+    font-size: 80px;
+}
+.btn
+{
+    padding: 10px 60px;
+    border-radius: 15px;  
+    background-color: black; 
+    color: white;
+}
+
+
+
